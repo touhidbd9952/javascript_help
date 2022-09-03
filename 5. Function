@@ -63,4 +63,71 @@ Example:
         {
             carName = "Volvo";    
         }
-      
+   
+   
+   ////////String Function ////////////////////////////////
+   
+   //String Length:
+   
+            let txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            let length = txt.length;
+   
+   //String slice(), to get a part from a string by start and end index number
+   
+            let str = "Apple, Banana, Kiwi";
+            let part = str.slice(7, 13);     //get str[7]...str[13], so output "Banana"
+   
+   //String substring(), extract a part of a string and returns
+   
+            let str = "Apple, Banana, Kiwi";
+            let part = str.substring(7, 13);  //get str[7]...str[13], so output "Banana"
+   
+   //String substr(), here first parameter is start index and second parameter is lenth of text that required
+   
+           let str = "Apple, Banana, Kiwi";
+           let part = str.substr(0, 5); // str.substr(start_index , lengthoftext), so output "Apple"
+  
+  //Replacing String Content, replace() method replaces a specified value
+  
+        let text = "Please visit America!";
+        let newText = text.replace("America", "Canada");  //output  "Please visit Canada!"
+  
+  //Converting to Upper
+  
+        let text1 = "Hello World!";
+        let text2 = text1.toUpperCase();
+  
+  //String toLowerCase()
+  
+        let text1 = "Hello World!";       // String
+        let text2 = text1.toLowerCase();
+  
+  //String concat(), joins two or more strings
+  
+        let text1 = "Hello";
+        let text2 = "World";
+        let text3 = text1.concat(" ", text2);  //Hello World
+  
+  //String trim(), removes whitespace from both sides of a string
+  
+        let text1 = "      Hello World!      ";
+        let text2 = text1.trim(); //Hello World!
+  
+  //String charAt(), returns the character at a specified index
+  
+        let text = "HELLO WORLD";
+        let char = text.charAt(0);  //H
+  
+  //String split(), converted string to an array
+  
+        let text = "a,b,c,d,e,f";
+        const myArray = text.split(",");
+  
+  //indexOf() method returns the position
+  
+        let str = "Please locate where 'locate' occurs!";
+        document.getElementById("demo").innerHTML = str.indexOf("locate");  //7
+        
+  
+  
+        
