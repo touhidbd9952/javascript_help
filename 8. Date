@@ -1,0 +1,16 @@
+
+const d = new Date(); //Sat Sep 03 2022 15:57:40 GMT+0900 (Japan Standard Time)
+
+const d = new Date("2015/03/25");
+
+
+const d = new Date();
+d.getTime(); //1662189248147
+d.getFullYear(); //2022
+d.getMonth(); //9
+d.getDate(); //3
+d.getHours(); //16
+d.getMinutes(); //15
+d.getSeconds(); //18
+d.getMilliseconds(); //getMilliseconds() method returns the milliseconds of a date as a number (0-999), output like as 884
+d.getDay(); //The getDay() method returns the weekday as a number, output like as 6
