@@ -1,0 +1,12 @@
+///////////Single line comments start with //    //////////////////////////////////
+  
+    // Change heading
+    
+//////////Multi-line comments start with /* and end with */  //////////////////////////
+
+    /*
+    The code below will change
+    the heading with id = "myH"
+    and the paragraph with id = "myP"
+    in my web page:
+    */
