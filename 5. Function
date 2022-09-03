@@ -1,0 +1,66 @@
+///////Function Syntax/////////
+
+    function name(parameter1, parameter2, parameter3) 
+    {
+      // code to be executed
+    }
+
+Example:
+        //Calculate the product of two numbers, and return the result:
+        
+        let x = myFunction(4, 3);   // Function is called
+
+        function myFunction(a, b) 
+        {
+          return a * b;             // Function returns 
+        }
+ 
+ Example:
+        //Convert Fahrenheit to Celsius:
+        
+        function toCelsius(fahrenheit) 
+        {
+            return (5/9) * (fahrenheit-32);
+        }
+        document.getElementById("demo").innerHTML = toCelsius(77);  // Function is called
+ 
+ Example:
+        //Accessing a function without ()
+        
+        function toCelsius(fahrenheit) 
+        {
+          return (5/9) * (fahrenheit-32);
+        }
+        document.getElementById("demo").innerHTML = toCelsius; 
+ 
+ Example
+        //Functions Used as Variable Values
+        
+        let x = toCelsius(77);
+        let text = "The temperature is " + x + " Celsius";
+
+        //we can use the function directly, as a variable value:
+        
+        let text = "The temperature is " + toCelsius(77) + " Celsius";
+        
+        
+    
+    ///////////Local Variables//////////////////////////////
+    
+    //Variables declared within a function
+    
+        function myFunction() 
+        {
+            let carName = "Volvo";   // local/inner variable 
+        }
+     
+     ////////// Outer Variables ////////////////////////////
+     
+     //Variables declared Global/outside a function
+     
+        let carName = "";   // global/outer variable 
+        function myFunction() 
+        {
+            carName = "Volvo";    
+        }
+      
