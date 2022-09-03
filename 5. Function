@@ -128,6 +128,21 @@ Example:
         let str = "Please locate where 'locate' occurs!";
         document.getElementById("demo").innerHTML = str.indexOf("locate");  //7
         
+  //search() method returns the position
   
+        let str = "Please locate where 'locate' occurs!";
+        document.getElementById("demo").innerHTML = str.search("locate");
+  
+  //Search a string for "ain"
+  
+        let text = "The rain in SPAIN stays mainly in the plain"; 
+        document.getElementById("demo").innerHTML = text.match(/ain/g);
+  
+  //includes() method returns true if a string contains a specified value
+  
+        let text = "Hello world, welcome to the universe.";
+        text.includes("world");
+        
+ 
   
         
