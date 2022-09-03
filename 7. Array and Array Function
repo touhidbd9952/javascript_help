@@ -1,0 +1,192 @@
+//////Create blank array//////
+
+    const points = new Array();
+    const points = [];
+
+///// Create an array with 40 undefined elements:
+
+    const points = new Array(40); 
+
+
+//One dimensional Array
+
+    const cars = ["Saab", "Volvo", "BMW"];  
+    or
+    const cars = new Array("Saab", "Volvo", "BMW");
+
+//create array and initialize value
+
+    const cars = [];
+    cars[0]= "Saab";
+    cars[1]= "Volvo";
+    cars[2]= "BMW";
+
+//get value from particular index of array
+
+  const cars = ["Saab", "Volvo", "BMW"];
+  let car = cars[0];
+
+//Access full array
+
+  const cars = ["Saab", "Volvo", "BMW"];
+  document.getElementById("demo").innerHTML = cars;  //Saab,Volvo,BMW
+
+//array Object:
+
+    const person = {firstName:"John", lastName:"Doe", age:46};
+
+
+/////////////////Array Properties and Methods////////////////////////////////////////////////////////////////////
+//to check a variable is array or not
+Array.isArray(fruits);  //if true, it is an array
+
+/////Converting Arrays to Strings/////
+  
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    document.getElementById("demo").innerHTML = fruits.toString();  //Banana,Orange,Apple,Mango
+
+
+cars.length   // Returns the number of elements
+cars.sort()   // Sorts the array 
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let length = fruits.length; //// Returns the number of elements
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let fruit = fruits[0]; //Accessing the First Array Element
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let fruit = fruits[fruits.length - 1]; //Accessing the Last Array Element
+
+////pop() method removes the last element from an array/////
+
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    fruits.pop();  //Banana,Orange,Apple
+    
+////push() method adds a new element to an array (at the end):////
+
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    fruits.push("Kiwi"); //Banana,Orange,Apple,Mango,Kiwi
+
+///shift() method "remove" first element of an array and "shifts" other elements to the left
+
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    fruits.shift();   //Orange,Apple,Mango
+
+///unshift() method "add" a new element to an array (at the beginning)
+
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    fruits.unshift("Lemon"); //Lemon,Banana,Orange,Apple,Mango
+    
+/// concating two or more array elements
+    
+    const myGirls = ["Cecilie", "Lone"];
+    const myBoys = ["Emil", "Tobias", "Linus"];
+    const myChildren = myGirls.concat(myBoys); //Cecilie,Lone,Emil,Tobias,Linus
+    
+    //concats multiple array
+    const arr1 = ["Cecilie", "Lone"];
+    const arr2 = ["Emil", "Tobias", "Linus"];
+    const arr3 = ["Robin", "Morgan"];
+    const myChildren = arr1.concat(arr2, arr3);
+    
+    //Merging an Array with Values)
+    const arr1 = ["Emil", "Tobias", "Linus"];
+    const myChildren = arr1.concat("Peter");
+ 
+ ///sort() method sorts an array in ascending order //////
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    fruits.sort(); //Banana,Orange,Apple,Mango
+ 
+ ///reverse() sort an array in descending order /////
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    
+    // First sort the array
+    fruits.sort();   //Apple,Banana,Mango,Orange
+
+    // Then reverse it:
+    fruits.reverse(); //Orange,Mango,Banana,Apple
+ 
+ //////Numeric Sort///////////////////////////////////////////////
+ 
+ //to sort asending order
+      const points = [40, 100, 1, 5, 25, 10];
+      points.sort(function(a, b){return a - b});
+ 
+//to sort decending order
+    const points = [40, 100, 1, 5, 25, 10];
+    points.sort(function(a, b){return b - a});
+
+//to find the highest number in an array
+    function myArrayMax(arr) 
+    {
+      return Math.max.apply(null, arr);
+    }
+
+//to find the lowest number in an array
+    function myArrayMin(arr) 
+    {
+      return Math.min.apply(null, arr);
+    }
+
+//Sorting Object Arrays in ascending order (small to big)
+    const cars = [
+      {type:"Volvo", year:2016},
+      {type:"Saab", year:2001},
+      {type:"BMW", year:2010}
+    ];
+    cars.sort(function(a, b){return a.year - b.year}); 
+    
+    
+
+    
+ 
+
+/////////////// Looping array elements///////////////////////////////////////////////////////////////////////////
+
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+    let fLen = fruits.length;
+
+    let text = "<ul>";
+    for (let i = 0; i < fLen; i++) {
+      text += "<li>" + fruits[i] + "</li>";
+    }
+    text += "</ul>";
+
+    document.getElementById("demo").innerHTML = text;
+    
+    //output:
+    <ul>
+    <li>Banana</li>
+    <li>Orange</li>
+    <li>Apple</li>
+    <li>Mango</li>
+    </ul>
+    
+ ////You can also use the Array.forEach() function:////////////////
+      
+     <p id="demo"></p>
+
+    <script>
+    const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+    let text = "<ul>";
+      fruits.forEach(myFunction);
+    text += "</ul>";
+    
+    document.getElementById("demo").innerHTML = text;
+
+    function myFunction(value) {
+      text += "<li>" + value + "</li>";
+    } 
+    </script>
+  
+  
+  //////Add/push New Array Element///////
+  
+      const fruits = ["Banana", "Orange", "Apple"];
+      fruits.push("Lemon");  // Adds a new element
+ 
+ 
+ 
+  
