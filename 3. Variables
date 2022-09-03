@@ -1,0 +1,37 @@
+////////Variable Declaration///////////////
+    
+    var x = 5;
+    var y = 6;
+    var z = x + y;
+        
+        or 
+    let x = 5;
+    let y = 6;
+    let z = x + y;
+ 
+///////Const/fixed value type variable///////////////////////////
+    const price1 = 5;
+    const price2 = 6;
+    let total = price1 + price2;
+
+////////In One Line Can Declare Many Variables///////////////////
+
+    let person = "John Doe", carName = "Volvo", price = 200;
+
+
+
+/////////JavaScript variables can hold different data types: numbers, strings, objects and more//////////////////////////////////
+      
+     let length = 16;                               // Number
+     let lastName = "Johnson";                      // String
+     let x = {firstName:"John", lastName:"Doe"};    // Object
+
+
+//////// Arithmetic /////////////////////////////////////////////
+
+    let x = 5 + 2 + 3;
+
+/////// strings concatenation //////////////////////////////////
+
+    let x = "John" + " " + "Doe"; 
+
