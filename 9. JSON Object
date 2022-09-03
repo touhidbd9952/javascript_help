@@ -1,0 +1,32 @@
+//JSON Data: A Name and a Value
+
+     "firstName":"John"
+
+//JSON Object 
+
+    {"firstName":"John", "lastName":"Doe"}
+
+//JSON Arrays example
+
+    "employees":[
+      {"firstName":"John", "lastName":"Doe"},
+      {"firstName":"Anna", "lastName":"Smith"},
+      {"firstName":"Peter", "lastName":"Jones"}
+    ]
+
+
+//Converting a Text to a JSON Object
+
+    let text = '{ "employees" : [' +
+    '{ "firstName":"John" , "lastName":"Doe" },' +
+    '{ "firstName":"Anna" , "lastName":"Smith" },' +
+    '{ "firstName":"Peter" , "lastName":"Jones" } ]}'; 
+
+    const obj = JSON.parse(text);
+    
+    //use json object
+    document.getElementById("demo").innerHTML = obj.employees[1].firstName + " " + obj.employees[1].lastName;
+    
+  
+  
+    
