@@ -118,11 +118,16 @@ Example:
         let text = "HELLO WORLD";
         let char = text.charAt(0);  //H
   
-  //String split(), converted string to an array
+  //String split(), convert string to an array
   
         let text = "a,b,c,d,e,f";
         const myArray = text.split(",");
   
+  //Array to String conversion
+  
+        const fruits = ["Banana", "Orange", "Apple", "Mango"];
+        let text = fruits.toString();  //Banana,Orange,Apple,Mango
+
   //indexOf() method returns the position
   
         let str = "Please locate where 'locate' occurs!";
@@ -131,17 +136,17 @@ Example:
   //search() method returns the position
   
         let str = "Please locate where 'locate' occurs!";
-        document.getElementById("demo").innerHTML = str.search("locate");
+        document.getElementById("demo").innerHTML = str.search("locate"); //7
   
   //Search a string for "ain"
   
         let text = "The rain in SPAIN stays mainly in the plain"; 
         document.getElementById("demo").innerHTML = text.match(/ain/g);
   
-  //includes() method returns true if a string contains a specified value
+  //includes() method returns "true" if a string contains a specified value
   
         let text = "Hello world, welcome to the universe.";
-        text.includes("world");
+        text.includes("world"); //true
         
  
   
