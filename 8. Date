@@ -1,6 +1,19 @@
 
 const d = new Date(); //Sat Sep 03 2022 15:57:40 GMT+0900 (Japan Standard Time)
 
+
+  const d =  new Date().toISOString().slice(0,10); //return YYYY-MM-DD
+  const d =new Date().toString(); // e.g. "Fri Nov 21 2016 08:00:00 GMT+0100 (W. Europe Standard Time)"
+  const d = new Date().toLocaleTimeString(); // e.g. "08:00:00 AM"
+  const d = new Date().toLocaleString(); // e.g. "21/11/2016, 08:00:00 AM"
+  const d = new Date().toLocaleDateString(); // e.g. "21/11/2016
+  const d = new Date().toJSON(); // e.g. "2016-11-21T08:00:00.000Z"
+  const d = new Date().toISOString(); // e.g. "2016-11-21T08:00:00.000Z"
+  const d = new Date().toDateString(); // e.g. "Fri Nov 11 2016"
+
+
+
+
 const d = new Date("2015/03/25");
 
 
