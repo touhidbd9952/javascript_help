@@ -109,11 +109,11 @@ let fruit = fruits[fruits.length - 1]; //Accessing the Last Array Element
  
  //////Numeric Sort///////////////////////////////////////////////
  
- //to sort asending order
+ //to sort asending order (small to big)
       const points = [40, 100, 1, 5, 25, 10];
       points.sort(function(a, b){return a - b});
  
-//to sort decending order
+//to sort decending order (big to small)
     const points = [40, 100, 1, 5, 25, 10];
     points.sort(function(a, b){return b - a});
 
